@@ -1,3 +1,7 @@
+/* Feuille de style globale : variables de couleurs, reset, header/footer,
+   grille de films et formulaires. Chargée sur toutes les pages, en complément
+   du fichier CSS propre à chaque page (accueil.css, catalogue.css, etc.). */
+
 :root {
   --couleur-primaire: #e50914;
   --couleur-fond: #0f0f0f;
@@ -19,6 +23,9 @@ body {
   background: var(--couleur-fond);
   color: var(--couleur-texte);
   line-height: 1.5;
+  /* Pattern "sticky footer" : body en colonne flex sur toute la hauteur de l'écran,
+     et main en flex: 1 (voir plus bas) pour occuper l'espace restant. Résultat :
+     le footer reste collé en bas même quand une page a peu de contenu. */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +46,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  flex: 1 0 auto;
+  flex: 1 0 auto; /* prend tout l'espace vertical restant (voir commentaire sur body) */
 }
 
 /* En-tête */
