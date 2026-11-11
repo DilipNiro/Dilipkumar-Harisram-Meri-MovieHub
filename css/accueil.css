@@ -1,0 +1,25 @@
+/* bloc d'intro en haut de la home */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.hero p {
+    color: var(--couleur-texte-secondaire);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* section "films populaires" */
+.section-vedette {
+    margin-top: 3rem;
+}
+
+.section-vedette h2 {
+    margin-bottom: 1rem;
+}

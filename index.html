@@ -4,15 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MovieHub — Accueil</title>
+  <meta name="description" content="Découvrez des films, consultez leurs détails et créez votre liste de favoris.">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/accueil.css">
 </head>
 <body data-page="accueil">
+<!-- rempli par js/headerFooter.js -->
 <div id="header-placeholder"></div>
-  <main>
-    <h1>MovieHub</h1>
-    <p>Site en cours de construction.</p>
-  </main>
+
+<main>
+  <section class="hero">
+    <h1>Bienvenue sur MovieHub</h1>
+    <p>Recherchez des films, consultez leurs détails et créez votre liste de favoris.</p>
+    <a href="/pages/catalogue.html" class="bouton-principal">Explorer le catalogue</a>
+  </section>
+
+  <section class="section-vedette">
+    <h2>Films populaires</h2>
+    <div id="films-vedette" class="grille-films">
+      <p class="chargement">Chargement des films…</p>
+    </div>
+  </section>
+</main>
+
 <div id="footer-placeholder"></div>
+
+<!-- ordre important : accueil.js dépend des fichiers chargés avant lui -->
+<script src="/js/api.js" defer></script>
+<script src="/js/favorisStore.js" defer></script>
+<script src="/js/ui.js" defer></script>
 <script src="/js/headerFooter.js" defer></script>
+<script src="/js/accueil.js" defer></script>
 </body>
 </html>
