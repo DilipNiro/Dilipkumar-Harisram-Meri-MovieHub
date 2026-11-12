@@ -1,0 +1,38 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieHub — Catalogue</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/catalogue.css">
+</head>
+<body data-page="catalogue">
+  <div id="header-placeholder"></div>
+
+  <main>
+    <h1>Catalogue de films</h1>
+    <form id="form-recherche" class="formulaire-recherche">
+      <label for="champ-recherche">Rechercher un film</label>
+      <input type="search" id="champ-recherche" name="recherche" placeholder="Ex : Inception">
+      <button type="submit">Rechercher</button>
+    </form>
+
+    <!-- rempli par js/catalogue.js -->
+    <div id="resultats" class="grille-films">
+      <p class="chargement">Chargement des films…</p>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- ordre important -->
+  <script src="/js/api.js" defer></script>
+  <script src="/js/favorisStore.js" defer></script>
+  <script src="/js/ui.js" defer></script>
+  <script src="/js/headerFooter.js" defer></script>
+  <script src="/js/catalogue.js" defer></script>
+</body>
+</html>
+```

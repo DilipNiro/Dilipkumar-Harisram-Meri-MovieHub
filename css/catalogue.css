@@ -1,0 +1,20 @@
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* barre de recherche fixée en haut au scroll */
+.formulaire-recherche {
+  position: sticky;
+  top: 70px; /* juste sous le header qui est sticky aussi */
+  background: var(--couleur-fond);
+  padding: 1rem 0;
+  z-index: 5;
+}
+```
+
+**Git :**
+```
+git add pages/catalogue.html css/catalogue.css
+git commit -m "Ajoute la structure de la page Catalogue"
+git push
+```
