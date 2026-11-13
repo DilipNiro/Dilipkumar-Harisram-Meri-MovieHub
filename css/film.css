@@ -1,0 +1,52 @@
+/* affiche + infos côte à côte */
+.detail-film {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.detail-affiche {
+  flex: 0 0 280px;
+}
+
+.detail-affiche img {
+  border-radius: var(--rayon);
+}
+
+.detail-infos {
+  flex: 1;
+  min-width: 250px;
+}
+
+.detail-infos h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-infos .meta {
+  color: var(--couleur-texte-secondaire);
+  margin-bottom: 0.5rem;
+}
+
+.detail-infos .note {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.detail-infos .synopsis {
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* empile affiche et infos en mobile */
+@media (max-width: 600px) {
+  .detail-film {
+    flex-direction: column;
+  }
+
+  .detail-affiche {
+    flex: none;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}

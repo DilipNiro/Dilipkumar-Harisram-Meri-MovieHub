@@ -10,11 +10,3 @@ h1 {
   padding: 1rem 0;
   z-index: 5;
 }
-```
-
-**Git :**
-```
-git add pages/catalogue.html css/catalogue.css
-git commit -m "Ajoute la structure de la page Catalogue"
-git push
-```
